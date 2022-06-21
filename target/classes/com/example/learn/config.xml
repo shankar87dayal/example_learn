@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <bean id="student" class="com.example.learn.Student">
+    
+    <property name="name" value="Raushan kumar" />
+    <property name="id" value="98" />
+    
+    
+    </bean>
+    
+    <bean id="branch" class="com.example.learn.Branch">
+    
+    <property name="name" value="CSE" />
+    <property name="student" ref="student" />
+    
+    
+    </bean>
+    
+    </beans>
