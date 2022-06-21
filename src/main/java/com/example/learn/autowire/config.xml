@@ -19,7 +19,7 @@
      
      </bean>
      
-     <bean id="employeeService" class="com.example.learn.autowire.EmployeeService" autowire="byName">
+     <bean id="employeeService" class="com.example.learn.autowire.EmployeeService" autowire="byType">
      
      
      </bean>
