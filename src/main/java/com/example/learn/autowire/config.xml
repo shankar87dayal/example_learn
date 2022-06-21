@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    
+    <bean id="employee" class="com.example.learn.autowire.Employee">
+      <property name="id" value="98" />
+      <property name="empName" value="Raushan ranjan" />
+      <property name="mNo" value="7488010510"></property>
+    </bean>
+    
+     <bean id="address" class="com.example.learn.autowire.Address">
+        <property name="Street" value="perumal kovil street, semmancheri alamaram " />
+        <property name="zipCode" value="Chennai"></property>
+     
+     </bean>
+     
+     <bean id="employeeService" class="com.example.learn.autowire.EmployeeService" autowire="byName">
+     
+     
+     </bean>
+     
+    
+    </beans>
